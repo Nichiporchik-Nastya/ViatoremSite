@@ -1,0 +1,270 @@
+:root {
+  --radius: 5px;
+  --white: #EBEBEB;
+  --big: 1.3em;
+  --lil: 1.1em;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  :root {
+    scroll-behavior: smooth;
+  }
+}
+
+@font-face {
+  font-family: "OnestBold";
+  src: url("../fonts/OnestExtraBold1602-hint.ttf") format("truetype");
+  font-style: normal;
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "OnestRegular";
+  src: url("../fonts/OnestLight1602-hint.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+.to-up {
+  position: fixed;
+  bottom: 20px;
+  right: 40px;
+}
+
+.header {
+  position: absolute;
+  top: 0;
+}
+
+h2 {
+  font-family: "OnestBold", sans-serif;
+  font-size: 36px;
+  margin-bottom: 60px;
+  max-width: 600px;
+}
+
+.section {
+  margin-top: 140px;
+}
+
+footer {
+  margin-top: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.section_accent {
+  margin: 0px !important;
+}
+
+.section_first {
+  margin-top: 40px;
+}
+
+.nav-menu {
+  display: flex;
+  gap: 40px;
+  font-size: var(--big);
+  padding: 20px 0;
+}
+
+.hero-block {
+  background-image: url(../img/bg.png);
+  min-height: 95vh;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+}
+
+.hero-title {
+  font-size: 96px;
+  font-family: "OnestBold", sans-serif;
+  text-transform: uppercase;
+  display: flex;
+  flex-direction: column;
+  margin-top: 80px;
+}
+
+.hero-title__subtitle {
+  font-size: 3rem;
+  text-transform: none;
+  font-family: "OnestBold", sans-serif;
+}
+
+.hero-title__description {
+  font-size: 2rem;
+  text-transform: none;
+  font-family: "OnestRegular", sans-serif;
+}
+
+.span-wrapper {
+  display: block;
+}
+
+.hero-description {
+  max-width: 800px;
+  margin-top: 40px;
+  line-height: 120%;
+  font-size: var(--big);
+}
+
+.hero-btn {
+  border-radius: var(--radius);
+  background-color: var(--white);
+  color: #1E1F1F;
+  display: inline-block;
+  padding: 16px 48px;
+  margin-top: 40px;
+  font-family: "OnestBold", sans-serif;
+  transition: .2s ease;
+  font-size: var(--big);
+}
+
+.hero-btn:hover {
+
+  background-color: #fff;
+}
+
+.logos-block {
+  opacity: .5;
+  margin-top: 60px;
+  display: flex;
+  gap: 20px;
+}
+
+.hero-author-block {
+  background-color: #3097A6;
+  padding: 10px;
+  text-align: center;
+}
+
+
+/*//////////////////////////////////////////////*/
+
+.content-block {
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.content-links {
+  display: flex;
+  align-self: right;
+}
+
+.content-links__item {
+  height: 100%;
+}
+
+.content-links__item a {
+  border-radius: var(--radius);
+  max-width: 220px;
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+  padding: 20px;
+  transition: .2s ease;
+}
+
+.content-links__item a:hover {
+  background-color: #0c0c0c;
+}
+
+.content-links__item-text {
+  max-width: 100%;
+  line-height: 120%;
+  font-size: var(--lil);
+}
+
+.content-block__p-wrapper {
+  display: flex;
+  flex-direction: column;
+  /* gap: 20px; */
+}
+
+.content-block__block-wrap {
+  display: flex;
+  gap: 20px;
+}
+
+.content-block__p {
+  max-width: 420px;
+  line-height: 130%;
+  margin-bottom: 20px;
+}
+
+.content-block__lead-p {
+  font-size: var(--big);
+  line-height: 120%;
+  margin-bottom: 24px;
+  max-width: 400px;
+}
+
+
+
+
+
+/*///////////////////////////////////////////*/
+
+.mune-img {
+  /* height: 340px; */
+  max-width: 250px;
+  margin-top: 400px;
+}
+
+.nikan-img {
+  max-height: 640px;
+  max-width: 460px;
+}
+
+.list-item {
+  font-size: var(--big);
+  padding: 16px 32px;
+  border-bottom: 1px solid;
+}
+
+/*////////////////////////////////////*/
+
+
+.gif {
+  max-width: 400px;
+  border-radius: var(--radius);
+}
+
+.info-img {
+  height: 400px;
+}
+
+.video {
+  max-width: 1060px;
+}
+
+
+body {
+  color: var(--white);
+  font-family: "OnestRegular", sans-serif;
+  font-size: var(--lil);
+  background-color: #1E1F1F;
+  position: relative;
+  /* display: flex;
+  flex-direction: column;
+  height: 100%;
+  max-width: 100vw;
+  min-width: 100vw;
+  width: 100vw;
+  overflow-x: hidden;
+  position: relative; */
+}
+
+.container {
+  padding: 0 120px;
+}
+
+.unity-desktop {
+  display: flex;
+}
+
+#unity-canvas {
+  margin: 0 auto;
+}
